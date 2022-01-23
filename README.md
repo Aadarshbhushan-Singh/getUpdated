@@ -7,6 +7,7 @@ I have used News API for fetching the current news. It gives 1000 request per da
 website hits more than that limit, it will stop giving news. 
 
 # Note
+Because of limitation of News API this website cannot be demonstrated on live using github pages. It will work fine in local computer. 
 To run it use your own api key.
 
 # Getting Started with Create React App
