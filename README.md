@@ -1,6 +1,14 @@
 # This is how the web page looks like
 ![](Design/home.png)
 
+# Features of website
+Here you can read different current news based on different categories like science, sports, general etc.
+I have used News API for fetching the current news. It gives 1000 request per day for free for learning purpose. So, if this 
+website hits more than that limit, it will stop giving news. 
+
+# Note
+To run it use your own api key.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
