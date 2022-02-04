@@ -5,6 +5,7 @@ import News from './Components/News';
 import { BrowserRouter as Router,  Switch,  Route } from 'react-router-dom'
 import React from 'react'
 
+// Aadarshbhushan Singh
 
 function App() {
   return (
