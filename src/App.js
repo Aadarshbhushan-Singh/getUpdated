@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar';
 import News from './Components/News';
 import { BrowserRouter as Router,  Switch,  Route } from 'react-router-dom'
 import React from 'react'
+import { About } from './Components/About/About';
 
 // Aadarshbhushan Singh Github Token Test
 
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/health"><News  key="health" pageSize={20} country="in" category="health" /></Route>
           <Route exact path="/sports"><News key="sports" pageSize={20} country="in" category="sports" /></Route>
           <Route exact path="/technology"><News key="technology" pageSize={20} country="in" category="technology" /></Route>
+          <Route exact path = "/about"><About/></Route>
         </Switch>
       </Router>
     </div>

@@ -3,7 +3,10 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export default class NavBar extends Component {
+    
+
     render() {
+        
         return (
             <div>
                 <Navbar bg="light" expand="lg">
@@ -19,6 +22,7 @@ export default class NavBar extends Component {
                             <Link className="nav-link" to="/health">Health</Link>
                             <Link className="nav-link" to="/sports">Sports</Link>
                             <Link className="nav-link" to="/technology">Technology</Link>
+                            <Link className="nav-link" to="/about">About</Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
