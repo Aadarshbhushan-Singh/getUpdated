@@ -332,7 +332,7 @@ export default class News extends Component {
 
         return (
             <div className='container my-3'>
-                <h1 className='heading'>Get Updated -Top Headings</h1>
+                <h1 className='heading'>{this.props.category.toUpperCase()} -Top Headings</h1>
 
                 <div className="row">
                     {this.state.articles.map((element) => {

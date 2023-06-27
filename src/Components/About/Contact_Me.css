@@ -1,0 +1,96 @@
+.contact__container{
+      width: 80%;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 12%;
+}
+
+.contact__options{
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+}
+
+.contact__option{
+      padding: 1.2rem;
+      border-radius: 1.2rem;
+      text-align: center;
+      border: 1px solid rgb(14, 106, 226);
+}
+
+.contact__option-icon{
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+}
+
+.contact__option a{
+      margin-top: 0.7rem;
+      display: inline-block;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none; 
+      color: white; 
+      background-color: rgb(80, 76, 182);   
+      font-size: 90%;
+      border-radius: 1rem; 
+
+}
+
+.contact__option a:hover{
+      background-color: red;
+      transition: 150ms all ease-in;
+      background-color: rgb(75, 69, 168);
+}
+
+form{
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+}
+.send_message_button {
+      display: block;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none; 
+      color: white; 
+      background-color: rgb(80, 76, 182);   
+      font-size: 130%;
+      border: none;
+      border-radius: 1rem; 
+      width: 80%;
+}
+
+.send_message_button:hover{
+      transition: 150ms all ease-in;
+      background-color: rgb(75, 69, 168);
+}
+input, textarea{
+      width: 80%;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      background: transparent;
+      border: 1px solid rgb(14, 106, 226); 
+      resize: none;
+      color: var(--color-white)
+}
+
+/* ======================= MEDIA QUERIES (MEDIUM DEVICES - TABLETS)=====================*/
+@media screen and (max-width: 1350px) {
+      .container.contact__container{
+            display: block;
+      }
+
+      form{
+            margin-top: 2rem;
+            padding: 2rem 0;
+      }
+
+}
+
+
+/* ======================= MEDIA QUERIES (MEDIUM DEVICES - TABLETS)=====================*/
+@media screen and (max-width: 600px) {
+      .container.container__contact{
+
+      }
+}

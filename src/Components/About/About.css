@@ -2,4 +2,42 @@
       width: 70%;
       border: 1px solid red;
       margin: auto;
+      padding-bottom: 4rem;
 }
+
+
+
+
+h1, h3{
+      /* display: none; */
+      margin: 2rem 0rem 2rem 0rem;
+      text-align: center;
+}
+
+p{
+      text-align: justify;
+}
+
+#intro_name{
+      font-weight: bold;
+}
+
+.portfolio_button a{
+      display: block;
+      width: 40%;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin: auto;
+      text-align: center;
+      text-decoration: none; 
+      color: white; 
+      background-color: rgb(80, 76, 182);   
+      font-size: 130%;
+      border-radius: 1rem; 
+}
+
+.portfolio_button a:hover{
+      transition: 150ms all ease-in;
+      background-color: rgb(63, 57, 138);
+}
+
+

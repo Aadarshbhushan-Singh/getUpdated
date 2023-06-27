@@ -14,8 +14,8 @@ function App() {
       <Router>
       <NavBar />
         <Switch>
-          <Route exact path="/"><News key="science" pageSize={20} country="in" category="general" /></Route>
-          <Route exact path="/getUpdated"><News key="science" pageSize={20} country="in" category="general" /></Route>
+          <Route exact path="/"><News key="general" pageSize={20} country="in" category="general" /></Route>
+          <Route exact path="/getUpdated"><News key="general" pageSize={20} country="in" category="general" /></Route>
           <Route exact path="/science"><News key="science" pageSize={20} country="in" category="science" /></Route>
           <Route exact path="/business"><News key="business" pageSize={20} country="in" category="business" /></Route>
           <Route exact path="/entertainment"><News key="entertainment" pageSize={20} country="in" category="entertainment" /></Route>

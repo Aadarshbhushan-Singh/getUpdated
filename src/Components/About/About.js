@@ -1,12 +1,13 @@
 import React from 'react'
 import './About.css'
 import { Button } from 'bootstrap'
+import { Contact_Me } from './Contact_Me'
 export const About = () => {
       
       return (
             <section className='about_me_section'>
                   <div className="heading_intro">
-                        <h1>Hello I'm <span>Aadarshbhushan Singh</span></h1>
+                        <h1>Hello I'm <span id='intro_name'>Aadarshbhushan Singh</span></h1>
                   </div>
 
                   <hr  className='horizontal_line'/>
@@ -23,14 +24,14 @@ export const About = () => {
 
                   <div className="portfolio_button">
                         <h3>Visit my portfolio</h3>
-                        <a href="#">Button</a>
+                        <a href="#">View Portfolio</a>
                   </div>
 
                   <div className="contact_me">
                         <div className='heading_contact_me'>
                               <h3>Contact Me</h3>
                         </div>
-                        <div className='contact_me_section'>
+                        {/* <div className='contact_me_section'>
                               <div className="form_section">
                                     <form action="">
                                           <input type="text" placeholder='Your Full Name'/>
@@ -43,7 +44,8 @@ export const About = () => {
                                     <a href="#">Contact BUtton 2</a>
                                     <a href="#">Contact BUtton 2</a>
                               </div>
-                        </div>
+                        </div> */}
+                        <Contact_Me/>
                   </div>
 
             </section>
