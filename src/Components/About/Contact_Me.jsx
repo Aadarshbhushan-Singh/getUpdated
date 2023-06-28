@@ -18,15 +18,30 @@ export const Contact_Me = () => {
 
       const sendEmail = (e) => {
             e.preventDefault();
-        
-            emailjs.sendForm('service_e27rsij', 'template_wwn8rir', form.current, 'uY9OySxYq2ZyW_E28')
-              .then((result) => {
-                  console.log(result.text);
-              }, (error) => {
-                  console.log(error.text);
-              });
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
 
-              e.target.reset()
+           
+
+            if(name == "" ){
+                  alert("Name cannot be empty.");
+            }else if(email == ""){
+                  alert("Email cannot be empty");
+            }else{      
+                  alert("reached to send mail");
+ 
+                  emailjs.sendForm('service_e27rsij', 'template_wwn8rir', form.current, 'uY9OySxYq2ZyW_E28')
+                  .then((result) => {
+                  console.log(result.text);
+                  }, (error) => {
+                  console.log(error.text);
+                  });
+
+                  e.target.reset()
+            }
+
+            alert("reached here");
+        
       };
       return (
             <section id="contacts" >

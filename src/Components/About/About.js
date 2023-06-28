@@ -3,6 +3,8 @@ import './About.css'
 import { Button } from 'bootstrap'
 import { Contact_Me } from './Contact_Me'
 export const About = () => {
+
+      const portfolio_web_link= "https://aadarshbhushan-singh.github.io/my_portfolio_website/"
       
       return (
             <section className='about_me_section'>
@@ -14,37 +16,23 @@ export const About = () => {
 
                   <div className="know_more_about_me">
                         <h3>Know More About Me</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora hic asperiores? Asperiores qui perspiciatis incidunt illum? Aspernatur quam magni distinctio. Officia atque nam ut magni suscipit facilis, aperiam laborum.</p>
+                        <p>A skilled and dedicated computer enthusiast with prior experience in  <b className="bold__letters">Web Development</b> and <b className="bold__letters">Data Analysis</b>; proficient in <b className="bold__letters">Python, Java and React</b>; ready to drive success in goal-oriented companies and become an asset.</p>
                   </div>
 
                   <div className="about_this_project">
                         <h3>About This Project</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores molestias sunt, suscipit nesciunt quibusdam, ipsa ipsam vel deserunt nostrum quae libero ducimus repudiandae cupiditate sit dolor, aut commodi fuga vero?</p>
+                        <p>In today's fast-paced world, staying up-to-date with the latest information in our chosen fields can be challenging. That's why I created this web application, which offers a convenient solution to <b> keep yourself informed on various categories of news that are both current and reliable.</b> By providing a centralized platform, it saves you valuable time that would otherwise be spent searching for news across different categories.</p>
                   </div>
 
                   <div className="portfolio_button">
                         <h3>Visit my portfolio</h3>
-                        <a href="#">View Portfolio</a>
+                        <a href={portfolio_web_link} target="_blank">View Portfolio</a>
                   </div>
 
                   <div className="contact_me">
                         <div className='heading_contact_me'>
                               <h3>Contact Me</h3>
                         </div>
-                        {/* <div className='contact_me_section'>
-                              <div className="form_section">
-                                    <form action="">
-                                          <input type="text" placeholder='Your Full Name'/>
-                                          <input type="email" placeholder='Your Email'/>
-                                          <input type="text" placeholder='Your Message'/>
-                                    </form>
-                              </div>
-                              <div className="button_section">
-                                    <a href="#">Contact BUtton 1</a>
-                                    <a href="#">Contact BUtton 2</a>
-                                    <a href="#">Contact BUtton 2</a>
-                              </div>
-                        </div> */}
                         <Contact_Me/>
                   </div>
 

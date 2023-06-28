@@ -85,6 +85,18 @@ input, textarea{
             padding: 2rem 0;
       }
 
+      input, textarea{
+            width: 100%;
+      }
+
+      .send_message_button{
+            width: 100%;
+      }
+
+      .contact__option h4, .contact__option h5{
+            font-size: 90%;
+      }
+
 }
 
 
@@ -92,5 +104,9 @@ input, textarea{
 @media screen and (max-width: 600px) {
       .container.container__contact{
 
+      }
+
+      .contact__option{
+            font-size: 75%;
       }
 }

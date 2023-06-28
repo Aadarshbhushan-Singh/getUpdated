@@ -1,6 +1,6 @@
 .about_me_section{
       width: 70%;
-      border: 1px solid red;
+      /* border: 1px solid red; */
       margin: auto;
       padding-bottom: 4rem;
 }
@@ -15,7 +15,7 @@ h1, h3{
 }
 
 p{
-      text-align: justify;
+      text-align: center;
 }
 
 #intro_name{
