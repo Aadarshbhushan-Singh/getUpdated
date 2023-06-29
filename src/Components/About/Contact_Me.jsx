@@ -10,39 +10,55 @@ import { useEffect, useState } from "react";
 export const Contact_Me = () => {
 
       const form = useRef();
+      const [name, setName] = useState('');
+      const [email, setEmail] = useState('');
+      const [message, setMessage] = useState('');
+     
+          const handleInputChangeName = (e) => {
+                  const val = e.target.value;
+                  setName(val);
+          };
 
-      const [show, setShow] = useState(false);
+          const handleInputChangeEmail = (e) => {
+            const val = e.target.value;
+            setEmail(val);
+          }
 
-      const handleClose = () => setShow(false);
-      const handleShow = () => setShow(true);
+          const handleInputChangeMessage = (e) => {
+            const val = e.target.value;
+            setMessage(val);
+          }
 
       const sendEmail = (e) => {
             e.preventDefault();
-            var name = document.getElementById("name");
-            var email = document.getElementById("email");
 
-           
+            const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
-            if(name == "" ){
-                  alert("Name cannot be empty.");
-            }else if(email == ""){
-                  alert("Email cannot be empty");
-            }else{      
-                  alert("reached to send mail");
- 
-                  emailjs.sendForm('service_e27rsij', 'template_wwn8rir', form.current, 'uY9OySxYq2ZyW_E28')
-                  .then((result) => {
-                  console.log(result.text);
-                  }, (error) => {
-                  console.log(error.text);
-                  });
-
-                  e.target.reset()
+            if(name === ''){
+                  alert("I prefer personalized communication. Mind sharing your name? It adds a touch of uniqueness to our conversation.");
+            }else if(email === ''){
+                  alert("I would love to reply you back. Please pass on your email.")
+            }else if(emailRegex.test(email) == false){
+                  alert("Oops! Looks like you did some mistake while typing your email.");
+            }else if(message === ''){
+                  alert("Let's start engaging discussions! To enable me to respond to your comments, kindly share your opinions.")
+            }else{
+                        // alert("email sent");
+                        // e.preventDefault();
+                        // emailjs.sendForm('service_e27rsij', 'template_wwn8rir', form.current, 'uY9OySxYq2ZyW_E28')
+                        // .then((result) => {
+                        // console.log(result.text);
+                        // }, (error) => {
+                        // console.log(error.text);
+                        // });
+      
+                        const nameVal = document.getElementById('name') = '';
+                        nameVal = '';
             }
-
-            alert("reached here");
         
       };
+
+      
       return (
             <section id="contacts" >
                   <div className="container contact__container">
@@ -72,9 +88,9 @@ export const Contact_Me = () => {
                         </div>
 
                         <form ref={form}>
-                              <input type="text" name="name" id="name" placeholder="Your Full Name" required />
-                              <input type="email" name="email" id="email" placeholder="Your Email" required />
-                              <textarea name="message" id="message" rows="7" placeholder="Your message here!"></textarea>
+                              <input type="text" name="name" id="name" placeholder="Your Full Name" onChange={handleInputChangeName} />
+                              <input type="email" name="email" id="email" placeholder="Your Email" onChange={handleInputChangeEmail} />
+                              <textarea name="message" id="message" rows="7" placeholder="Your message here!" onChange={handleInputChangeMessage}></textarea>
                               <button type="submit" className="send_message_button" onClick={sendEmail}>Send Message</button>
                         </form>
                   </div>
