@@ -10,3 +10,8 @@
 a{
     /* text-decoration: none; */
 }
+
+#about_me_nav, #get_updated_nav{
+    color: rgb(49, 130, 196);
+    font-weight: bold;
+}

@@ -18,7 +18,7 @@ export default class NewsItem extends Component {
                         </Card.Text>
                         <p><b>Published at: </b> {publishedAt}</p>
                         <p><b> Author: </b> {author}</p>
-                       <a  rel="noreferrer" href={newsUrl} target="_blank">
+                       <a  rel="noopener noreferrer" href={newsUrl} target="_blank">
                            <Button>Read More</Button>
                        </a>
                     </Card.Body>

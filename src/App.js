@@ -5,10 +5,15 @@ import News from './Components/News';
 import { BrowserRouter as Router,  Switch,  Route } from 'react-router-dom'
 import React from 'react'
 import { About } from './Components/About/About';
+import {useEffect} from 'react'
 
 // Aadarshbhushan Singh Github Token Test
 
 function App() {
+  useEffect(() => {
+    document.title = 'Get-Updated';
+  }, []);
+
   return (
     <div className="App">
       <Router>

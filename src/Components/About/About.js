@@ -1,7 +1,8 @@
 import React from 'react'
 import './About.css'
-import { Button } from 'bootstrap'
 import { Contact_Me } from './Contact_Me'
+import {FaPrayingHands} from 'react-icons/fa'
+
 export const About = () => {
 
       const portfolio_web_link= "https://aadarshbhushan-singh.github.io/my_portfolio_website/"
@@ -9,7 +10,7 @@ export const About = () => {
       return (
             <section className='about_me_section'>
                   <div className="heading_intro">
-                        <h1>Hello I'm <span id='intro_name'>Aadarshbhushan Singh</span></h1>
+                        <h1>Namaste! &nbsp; <FaPrayingHands/> &nbsp;&nbsp; I'm  <span id='intro_name'>Aadarshbhushan Singh</span></h1>
                   </div>
 
                   <hr  className='horizontal_line'/>
@@ -26,7 +27,7 @@ export const About = () => {
 
                   <div className="portfolio_button">
                         <h3>Visit my portfolio</h3>
-                        <a href={portfolio_web_link} target="_blank">View Portfolio</a>
+                        <a href={portfolio_web_link} rel="noopener noreferrer" target="_blank">View Portfolio</a>
                   </div>
 
                   <div className="contact_me">

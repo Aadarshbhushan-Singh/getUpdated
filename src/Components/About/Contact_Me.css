@@ -30,7 +30,7 @@
       text-align: center;
       text-decoration: none; 
       color: white; 
-      background-color: rgb(80, 76, 182);   
+      background-color: rgb(49, 130, 196);   
       font-size: 90%;
       border-radius: 1rem; 
 
@@ -53,7 +53,7 @@ form{
       text-align: center;
       text-decoration: none; 
       color: white; 
-      background-color: rgb(80, 76, 182);   
+      background-color: rgb(49, 130, 196);   
       font-size: 130%;
       border: none;
       border-radius: 1rem; 
@@ -62,14 +62,14 @@ form{
 
 .send_message_button:hover{
       transition: 150ms all ease-in;
-      background-color: rgb(75, 69, 168);
+      background-color: rgb(49, 130, 196);
 }
 input, textarea{
       width: 80%;
       padding: 1.5rem;
       border-radius: 0.5rem;
       background: transparent;
-      border: 1px solid rgb(14, 106, 226); 
+      border: 1px solid rgb(49, 130, 196); 
       resize: none;
       color: var(--color-white)
 }

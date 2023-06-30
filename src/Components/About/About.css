@@ -12,6 +12,7 @@ h1, h3{
       /* display: none; */
       margin: 2rem 0rem 2rem 0rem;
       text-align: center;
+      color: rgb(49, 130, 196);
 }
 
 p{
@@ -30,7 +31,7 @@ p{
       text-align: center;
       text-decoration: none; 
       color: white; 
-      background-color: rgb(80, 76, 182);   
+      background-color: rgb(49, 130, 196);   
       font-size: 130%;
       border-radius: 1rem; 
 }
